@@ -9,9 +9,9 @@ public class WildFactory implements AnimalFactory {
     @Override
     public Animal createAnimal(String type) {
         switch (type.toLowerCase()) {
-            case "lion":
+            case "löwe":
                 return new WildLion();
-            case "elephant":
+            case "elefant":
                 return new WildElephant();
             default:
                 throw new IllegalArgumentException("Wildtier nicht verfügbar: " + type);
